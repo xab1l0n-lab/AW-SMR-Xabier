@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 107 - Formulario avanzado</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{--accent:#0b79d0}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;margin:0;padding:24px;color:#111}
+    .form-wrap{max-width:820px;margin:0 auto;background:#fff;padding:18px;border-radius:8px;border:1px solid #e6eef8}
+    fieldset{border:1px solid #eef4fb;padding:12px;border-radius:6px;margin-bottom:12px}
+    label{display:block;margin:8px 0 4px}
+    input[type="text"], input[type="email"], select, textarea{width:100%;padding:8px;border:1px solid #d6e3f2;border-radius:4px;box-sizing:border-box}
+    .row{display:flex;gap:12px}
+    .row > *{flex:1}
+    .actions{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}
+    button{background:var(--accent);color:#fff;border:0;padding:8px 14px;border-radius:6px;cursor:pointer}
+    button.reset{background:#9aa4b2}
+  </style>
+</head>
+<body>
+  <div class="form-wrap" aria-label="Formulario avanzado">
+    <h1 style="color:var(--accent);margin:0 0 12px">Formulario avanzado</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data" novalidate>
+      <fieldset>
+        <legend>Datos personales</legend>
+        <div class="row">
+          <label>Nombre
+            <input type="text" name="nombre" required>
+          </label>
+          <label>Apellidos
+            <input type="text" name="apellidos" required>
+          </label>
+        </div>
+
+        <div class="row">
+          <label>Correo
+            <input type="email" name="email" required>
+          </label>
+          <label>Teléfono
+            <input type="text" name="telefono">
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferencias</legend>
+        <label>Curso solicitado
+          <select name="curso" required>
+            <option value="">-- Selecciona --</option>
+            <option>Introducción a HTML5</option>
+            <option>CSS avanzado</option>
+            <option>JavaScript</option>
+          </select>
+        </label>
+
+        <label>Comentarios
+          <textarea name="comentarios" rows="4"></textarea>
+        </label>
+      </fieldset>
+
+      <label><input type="checkbox" name="acepto" required> Acepto las condiciones</label>
+
+      <div class="actions">
+        <button type="submit">Enviar</button>
+        <button type="reset" class="reset">Borrar los datos introducidos</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

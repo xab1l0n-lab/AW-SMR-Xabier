@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 51 - Formulario de contacto</title>
+  <meta name="author" content="Xabi">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; padding:18px; background:#f6f8fb; color:#222; }
+    form { max-width:640px; background:#fff; padding:16px; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
+    label { display:block; margin:10px 0 6px; font-weight:600; }
+    input[type="text"], input[type="email"], textarea { width:100%; padding:8px; box-sizing:border-box; border:1px solid #ccc; border-radius:4px; }
+    textarea { resize:vertical; min-height:120px; }
+    .actions { margin-top:12px; }
+    button { padding:8px 14px; border:0; border-radius:4px; background:#0b79d0; color:#fff; cursor:pointer; }
+    button[type="reset"] { background:#888; margin-left:8px; }
+    .hint { font-size:0.9rem; color:#666; margin-top:6px; }
+  </style>
+</head>
+<body>
+  <h1>Contacto</h1>
+
+  <form action="./gracias.html" method="post" novalidate>
+    <label for="nombre">Nombre completo</label>
+    <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre">
+
+    <label for="email">Correo electrónico</label>
+    <input id="email" name="email" type="email" required placeholder="tu@ejemplo.com">
+
+    <label for="asunto">Asunto</label>
+    <input id="asunto" name="asunto" type="text" required placeholder="Motivo del contacto">
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí"></textarea>
+
+    <p class="hint">Todos los campos marcados son obligatorios.</p>
+
+    <div class="actions">
+      <button type="submit">Enviar</button>
+      <button type="reset">Borrar los datos introducidos</button>
+    </div>
+  </form>
+</body>
+</html>

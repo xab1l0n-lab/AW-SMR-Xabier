@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Ejercicio 65 - Ficha ampliada del alumno</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root { --accent: #0b79d0; --muted: #6b7280; }
+    body { font-family: "Segoe UI", Roboto, Arial, sans-serif; background:#f4f7fb; margin:0; padding:24px; color:#111; }
+    .card { max-width:900px; margin:0 auto; background:#fff; padding:18px; border-radius:8px; border:1px solid #e6eef8; display:flex; gap:18px; align-items:flex-start; }
+    .photo { width:180px; height:180px; background:#eef7ff; border-radius:6px; overflow:hidden; display:flex; align-items:center; justify-content:center; }
+    .photo img { width:100%; height:100%; object-fit:cover; display:block; }
+    .info h2 { margin:0 0 6px; color:var(--accent); font-size:20px; }
+    .info p { margin:6px 0; color:#333; }
+    .meta { margin-top:10px; font-size:13px; color:var(--muted); }
+    .progress { height:10px; background:#eef6ff; border-radius:6px; overflow:hidden; margin-top:8px; }
+    .progress > span { display:block; height:100%; background:#2ecc71; width:78%; }
+    .labels { margin-top:10px; display:flex; gap:8px; flex-wrap:wrap; }
+    .labels span { background:#f1f7ff; color:var(--accent); padding:6px 8px; border-radius:6px; font-size:13px; }
+  </style>
+</head>
+<body>
+  <div class="card" role="region" aria-label="Ficha ampliada del alumno">
+    <div class="photo" aria-hidden="true">
+      <img src="/AW-SMR-Xabier/assets/img/foto-alumno.jpg" alt="Foto del alumno">
+    </div>
+
+    <div class="info">
+      <h2>Jesús Morales</h2>
+      <p><strong>DNI:</strong> 12345678X</p>
+      <p><strong>Curso:</strong> Diseño Web y Multimedia</p>
+      <p class="meta">Edad: 19 · Sexo: Hombre · Localidad: Puerto Real</p>
+
+      <div class="labels" aria-hidden="true">
+        <span>Matrícula 2025</span>
+        <span>Grupo A</span>
+        <span>Estado: Activo</span>
+      </div>
+
+      <label style="display:block;margin-top:12px;font-weight:600;">Progreso del curso</label>
+      <div class="progress" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

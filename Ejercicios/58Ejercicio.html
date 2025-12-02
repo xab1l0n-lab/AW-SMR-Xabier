@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 58 - Menú horizontal</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    /* Menú horizontal con submenú como en la captura del PDF */
+    body{font-family: "Segoe UI", Roboto, Arial, sans-serif;margin:0;background:#fff;color:#111}
+    header{background:#0b79d0;color:#fff;padding:12px}
+    header h1{margin:0;font-size:18px}
+    nav{background:#fff;border-bottom:1px solid #eef4fb}
+    .menu{max-width:1100px;margin:0 auto;display:flex;gap:18px;padding:10px 16px;list-style:none}
+    .menu a{color:#0b79d0;text-decoration:none;font-weight:600;padding:8px 10px;border-radius:6px;display:inline-block}
+    .menu li{position:relative}
+    .menu li:hover > a{background:#eaf4ff}
+    .submenu{display:none;position:absolute;left:0;top:100%;background:#fff;border:1px solid #e6eef8;border-radius:6px;padding:8px;min-width:180px;box-shadow:0 6px 18px rgba(10,30,60,.06)}
+    .submenu a{display:block;padding:6px 8px;color:#333}
+    .menu li:hover .submenu{display:block}
+    @media(max-width:700px){.menu{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi sitio</h1>
+  </header>
+
+  <nav>
+    <ul class="menu" role="menubar" aria-label="Menú principal">
+      <li><a href="#">Inicio</a></li>
+      <li>
+        <a href="#" aria-haspopup="true" aria-expanded="false">Cursos ▾</a>
+        <div class="submenu" role="menu" aria-label="Submenú cursos">
+          <a href="#">HTML5</a>
+          <a href="#">CSS3</a>
+          }
+    header h1{margin:0;font-size:18px}
+    nav{background:#fff;border-bottom:1px solid #eef4fb}
+    .menu{max-width:1100px;margin:0 auto;display:flex;gap:18px;padding:10px 16px;list-style:none}
+    .menu a{color:#0b79d0;text-decoration:none;font-weight:600;padding:8px 10px;border-radius:6px;display:inline-block}
+    .menu li{position:relative}
+    .menu li:hover > a{background:#eaf4ff}
+    .submenu{display:none;position:absolute;left:0;top:100%;background:#fff;border:1px solid #e6eef8;border-radius:6px;padding:8px;min-width:180px;box-shadow:0 6px 18px rgba(10,30,60,.06)}
+    .submenu a{display:block;padding:6px 8px;color:#333}
+    .menu li:hover .submenu{display:block}
+    @media(max-width:700px){.menu{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi sitio</h1>
+  </header>
+
+  <nav>
+    <ul class="menu" role="menubar" aria-label="Menú principal">
+      <li><a href="#">Inicio</a></li>
+      <li>
+        <a href="#" aria-haspopup="true" aria-expanded="false">Cursos ▾</a>
+        <div class="submenu" role="menu" aria-label="Submenú cursos">
+          <a href="#">HTML5</a>
+          <a href="#">CSS3</a>
+          <a href="#">JavaScript</a>
+        </div>
+      </li>
+      <li><a href="#">Proyectos</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

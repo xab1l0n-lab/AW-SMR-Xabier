@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 52 - Tabla con estilo</title>
+  <meta name="author" content="Xabi">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; padding:18px; background:#fff; color:#222; }
+    table { width:100%; max-width:900px; border-collapse:collapse; margin-top:12px; }
+    th, td { padding:10px 12px; border:1px solid #ddd; text-align:left; }
+    thead th { background:#0b79d0; color:#fff; }
+    tbody tr:nth-child(odd) { background:#f7fbff; }
+    tfoot td { background:#f1f1f1; font-weight:600; }
+  </style>
+</head>
+<body>
+  <h1>Listado de cursos</h1>
+
+  <table>
+    <caption style="text-align:left; font-weight:700; margin-bottom:8px;">Cursos disponibles 2025</caption>
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nombre del curso</th>
+        <th>Horas</th>
+        <th>Prácticas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>AW101</td>
+        <td>Introducción a HTML5</td>
+        <td>40</td>
+        <td>Sí</td>
+      </tr>
+      <tr>
+        <td>AW202</td>
+        <td>CSS avanzado</td>
+        <td>60</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>AW303</td>
+        <td>JavaScript para la web</td>
+        <td>80</td>
+        <td>Sí</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Total cursos</td>
+        <td>3</td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

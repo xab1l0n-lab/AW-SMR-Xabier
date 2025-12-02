@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 54 - Efectos de color</title>
+  <meta name="author" content="Xabi">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#e6f0ff 0%, #f7fbff 50%, #fff 100%); color:#123; }
+    .card { width:90%; max-width:760px; background:linear-gradient(180deg, #ffffff 0%, #f0f8ff 100%); border-radius:12px; padding:20px; box-shadow:0 6px 18px rgba(10,30,60,0.08); }
+    .badge { display:inline-block; padding:6px 10px; background:linear-gradient(90deg,#ff9a9e,#fad0c4); color:#fff; border-radius:999px; font-weight:700; margin-bottom:12px; }
+    h1 { margin:0 0 8px; color:#0b79d0; }
+    p { margin:0 0 12px; }
+    .swatches { display:flex; gap:8px; margin-top:12px; }
+    .swatch { width:48px; height:48px; border-radius:6px; border:1px solid rgba(0,0,0,0.06); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">Efectos</span>
+    <h1>Ejercicio 54 — Gradientes y paleta</h1>
+    <p>Ejemplo de uso de gradientes y paletas de color para mejorar la apariencia visual de una tarjeta.</p>
+
+    <div class="swatches" aria-hidden="true">
+      <div class="swatch" style="background:#0b79d0"></div>
+      <div class="swatch" style="background:#2ecc71"></div>
+      <div class="swatch" style="background:#f39c12"></div>
+      <div class="swatch" style="background:#9b59b6"></div>
+      <div class="swatch" style="background:#e74c3c"></div>
+    </div>
+  </div>
+</body>
+</html>

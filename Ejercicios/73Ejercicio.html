@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 73 - Tabla con rowspan y colspan</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin:20px; color:#222; }
+    table { border-collapse:collapse; width:100%; max-width:900px; }
+    th, td { border:1px solid #dfe8f5; padding:10px; text-align:left; }
+    th { background:#0b79d0; color:#fff; }
+  </style>
+</head>
+<body>
+  <h1>Horario semanal (ejemplo)</h1>
+  <table>
+    <tr>
+      <th>Hora</th>
+      <th>Lunes</th>
+      <th>Martes</th>
+      <th>Miércoles</th>
+      <th>Jueves</th>
+      <th>Viernes</th>
+    </tr>
+    <tr>
+      <td>09:00 - 10:30</td>
+      <td rowspan="2">Matemáticas</td>
+      <td>Lengua</td>
+      <td>Física</td>
+      <td>Inglés</td>
+      <td>Historia</td>
+    </tr>
+    <tr>
+      <td>10:30 - 12:00</td>
+      <td>Lengua</td>
+      <td>Física</td>
+      <td>Inglés</td>
+      <td>Historia</td>
+    </tr>
+    <tr>
+      <td>12:00 - 13:30</td>
+      <td colspan="2">Educación Física (Aula polideportiva)</td>
+      <td>Biología</td>
+      <td>Informática</td>
+      <td>Arte</td>
+    </tr>
+    <tr>
+      <td>13:30 - 15:00</td>
+      <td>Proyecto</td>
+      <td>Proyecto</td>
+      <td colspan="3">Tutoría y actividades</td>
+    </tr>
+  </table>
+</body>
+</html>

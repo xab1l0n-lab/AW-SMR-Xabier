@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 57 - Tabla de calificaciones</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    /* Estética para reproducir la tabla del PDF */
+    body{font-family: "Segoe UI", Roboto, Arial, sans-serif;background:#f6f8fb;margin:0;padding:24px;color:#111}
+    .wrap{max-width:900px;margin:0 auto}
+    h1{color:#0b79d0;margin:0 0 12px;font-size:20px}
+    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e6eef8}
+    thead th{background:#0b79d0;color:#fff;padding:10px 12px;text-align:left;font-weight:700}
+    th,td{padding:10px 12px;border-bottom:1px solid #eef4fb}
+    tbody tr:nth-child(odd){background:#fbfdff}
+    tfoot td{background:#f1f5fa;font-weight:700;padding:10px 12px}
+    .center{text-align:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Calificaciones</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Alumno</th>
+          <th class="center">Matemáticas</th>
+          <th class="center">Lengua</th>
+          <th class="center">Inglés</th>
+          <th class="center">Media</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Susana Expósito</td>
+          <td class="center">8.5</td>
+          <td class="center">7.0</td>
+          <td class="center">9.0</td>
+          <td class="center">8.2</td>
+        </tr>
+        <tr>
+          <td>Verónica Martín</td>
+          <td class="center">6.0</td>
+          <td class="center">6.5</td>
+          <td class="center">7.0</td>
+          <td class="center">6.5</td>
+        </tr>
+        <tr>
+          <td>José López</td>
+          <td class="center">9.0</td>
+          <td class="center">8.5</td>
+          <td class="center">8.0</td>
+          <td class="center">8.5</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total alumnos</td>
+          <td colspan="4" class="center">3</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 33 - Galería accesible</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin:18px; background:#fafafa; color:#222; }
+    .galeria { display:flex; gap:12px; flex-wrap:wrap; }
+    figure { width:220px; margin:0; background:#fff; border:1px solid #ddd; padding:8px; border-radius:6px; }
+    img { display:block; width:100%; height:auto; border-radius:4px; }
+    figcaption { font-size:0.9rem; color:#444; margin-top:6px; }
+  </style>
+</head>
+<body>
+  <h1>Ejercicio 33 — Galería con figure</h1>
+
+  <div class="galeria" role="list">
+    <figure role="listitem">
+      <img src="/AW-SMR-Xabier/assets/img/imagen1.jpg" alt="Descripción de la imagen 1">
+      <figcaption>Imagen 1 — descripción breve</figcaption>
+    </figure>
+
+    <figure role="listitem">
+      <img src="/AW-SMR-Xabier/assets/img/imagen2.jpg" alt="Descripción de la imagen 2">
+      <figcaption>Imagen 2 — descripción breve</figcaption>
+    </figure>
+
+    <figure role="listitem">
+      <img src="/AW-SMR-Xabier/assets/img/imagen3.jpg" alt="Descripción de la imagen 3">
+      <figcaption>Imagen 3 — descripción breve</figcaption>
+    </figure>
+  </div>
+</body>
+</html>

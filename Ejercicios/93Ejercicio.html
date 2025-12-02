@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 93 - Tabla resumen</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{--accent:#0b79d0;--muted:#6b7280}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f6f8fb;margin:0;padding:20px;color:#222}
+    .wrap{max-width:1000px;margin:0 auto}
+    h1{color:var(--accent);margin:0 0 12px}
+    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e6eef8;border-radius:6px;overflow:hidden}
+    thead th{background:var(--accent);color:#fff;padding:12px;text-align:left}
+    th,td{padding:10px 12px;border-bottom:1px solid #eef4fb}
+    tbody tr:nth-child(odd){background:#fbfdff}
+    tfoot td{background:#f1f5fa;padding:10px 12px;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Resumen de elementos</h1>
+    <table aria-label="Tabla resumen">
+      <thead>
+        <tr>
+          <th>Ítem</th>
+          <th>Descripción</th>
+          <th>Estado</th>
+          <th>Observaciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Item 1</td>
+          <td>Descripción breve del elemento 1</td>
+          <td>Activo</td>
+          <td>Sin incidencias</td>
+        </tr>
+        <tr>
+          <td>Item 2</td>
+          <td>Descripción breve del elemento 2</td>
+          <td>Inactivo</td>
+          <td>Revisión pendiente</td>
+        </tr>
+        <tr>
+          <td>Item 3</td>
+          <td>Descripción breve del elemento 3</td>
+          <td>Activo</td>
+          <td>Actualizado</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total elementos</td>
+          <td>3</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</body>
+</html>

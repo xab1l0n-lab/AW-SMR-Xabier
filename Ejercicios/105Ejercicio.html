@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 105 - Panel con iconos</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#f6f8fb;margin:0;padding:24px;color:#111}
+    .panel{max-width:980px;margin:0 auto;display:flex;gap:16px;flex-wrap:wrap}
+    .item{flex:1 1 220px;background:#fff;padding:14px;border-radius:8px;border:1px solid #eef4fb;display:flex;gap:12px;align-items:center}
+    .icon{width:48px;height:48px;border-radius:8px;background:#eef7ff;display:flex;align-items:center;justify-content:center;color:#0b79d0;font-weight:700}
+    h3{margin:0;color:#0b79d0;font-size:16px}
+    p{margin:4px 0 0;color:#444}
+  </style>
+</head>
+<body>
+  <section class="panel" aria-label="Panel con iconos">
+    <div class="item">
+      <div class="icon" aria-hidden="true">A</div>
+      <div>
+        <h3>Acceso rápido</h3>
+        <p>Enlace a recursos y documentación.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="icon" aria-hidden="true">B</div>
+      <div>
+        <h3>Soporte</h3>
+        <p>Contacto y ayuda técnica.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="icon" aria-hidden="true">C</div>
+      <div>
+        <h3>Configuración</h3>
+        <p>Ajustes y preferencias del usuario.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

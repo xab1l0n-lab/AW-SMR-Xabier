@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 30 - Formulario</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding:16px; }
+    form { max-width:520px; }
+    label { display:block; margin:8px 0 4px; }
+    input[type="text"], input[type="email"], textarea, select { width:100%; padding:8px; box-sizing:border-box; }
+    fieldset { margin-bottom:12px; padding:12px; }
+    .actions { margin-top:12px; }
+  </style>
+</head>
+<body>
+  <h1>Formulario de contacto</h1>
+
+  <form action="./gracias.html" method="post">
+    <fieldset>
+      <legend>Datos personales</legend>
+      <label for="nombre">Nombre</label>
+      <input id="nombre" name="nombre" type="text" required>
+
+      <label for="email">Correo electrónico</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="telefono">Teléfono</label>
+      <input id="telefono" name="telefono" type="text" pattern="[0-9+\s\-]{6,20}">
+    </fieldset>
+
+    <fieldset>
+      <legend>Consulta</legend>
+      <label for="asunto">Asunto</label>
+      <input id="asunto" name="asunto" type="text" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+    </fieldset>
+
+    <div class="actions">
+      <button type="submit">Enviar</button>
+      <button type="reset">Borrar los datos introducidos</button>
+    </div>
+  </form>
+</body>
+</html>

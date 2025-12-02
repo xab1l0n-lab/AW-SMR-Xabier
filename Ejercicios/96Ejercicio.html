@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 96 - Panel informativo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#f6f8fb;margin:0;padding:20px;color:#222}
+    .panel{max-width:900px;margin:0 auto;background:#fff;padding:18px;border-radius:8px;border:1px solid #eef4fb}
+    h1{color:#0b79d0;margin:0 0 12px}
+    .info{display:flex;gap:12px;align-items:flex-start}
+    .info .left{flex:1}
+    .info .right{width:220px;background:#fbfdff;padding:10px;border-radius:6px;border:1px solid #eef4fb}
+    .muted{color:#666;font-size:0.95rem}
+  </style>
+</head>
+<body>
+  <section class="panel" aria-labelledby="panel96">
+    <h1 id="panel96">Panel informativo</h1>
+    <div class="info">
+      <div class="left">
+        <p>Este panel muestra información principal y una columna lateral con datos complementarios, tal y como aparece en el material de ejercicios.</p>
+        <p class="muted">Utiliza este patrón para presentar contenido y metadatos relacionados.</p>
+      </div>
+      <aside class="right" aria-label="Datos complementarios">
+        <p><strong>Estado:</strong> Activo</p>
+        <p><strong>Última actualización:</strong> 2025</p>
+      </aside>
+    </div>
+  </section>
+</body>
+</html>

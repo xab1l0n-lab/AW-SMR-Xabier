@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 34 - Multimedia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin:18px; background:#fff; color:#222; }
+    .media { max-width:720px; margin-bottom:18px; }
+    h1 { margin-bottom:8px; }
+  </style>
+</head>
+<body>
+  <h1>Ejercicio 34 — Audio y Vídeo</h1>
+
+  <section class="media">
+    <h2>Audio</h2>
+    <p>Reproductor de audio con controles nativos:</p>
+    <audio controls>
+      <source src="/AW-SMR-Xabier/assets/media/ejemplo-audio.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento audio.
+    </audio>
+  </section>
+
+  <section class="media">
+    <h2>Vídeo</h2>
+    <p>Reproductor de vídeo con subtítulos (ejemplo):</p>
+    <video controls width="640">
+      <source src="/AW-SMR-Xabier/assets/media/ejemplo-video.mp4" type="video/mp4">
+      <track kind="subtitles" srclang="es" label="Español" src="/AW-SMR-Xabier/assets/media/subtitulos-es.vtt" default>
+      Tu navegador no soporta el elemento video.
+    </video>
+  </section>
+</body>
+</html>

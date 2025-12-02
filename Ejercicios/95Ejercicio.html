@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 95 - Formulario compacto</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#fff;margin:0;padding:20px;color:#222}
+    form{max-width:640px;margin:0 auto;background:#fbfdff;padding:16px;border:1px solid #eef4fb;border-radius:8px}
+    label{display:block;margin:8px 0 4px;font-weight:600}
+    input[type="text"], input[type="email"], select{width:100%;padding:8px;border:1px solid #d6e3f2;border-radius:4px;box-sizing:border-box}
+    .row{display:flex;gap:12px}
+    .row > *{flex:1}
+    .actions{margin-top:12px;text-align:right}
+    button{padding:8px 12px;border-radius:6px;border:0;background:#0b79d0;color:#fff;cursor:pointer}
+  </style>
+</head>
+<body>
+  <form action="#" method="post" aria-label="Formulario compacto">
+    <h1 style="color:#0b79d0;margin:0 0 12px">Inscripción rápida</h1>
+
+    <label>Nombre</label>
+    <input type="text" name="nombre" required>
+
+    <label>Correo</label>
+    <input type="email" name="email" required>
+
+    <div class="row">
+      <label>Teléfono
+        <input type="text" name="telefono">
+      </label>
+      <label>Curso
+        <select name="curso">
+          <option>Introducción a HTML5</option>
+          <option>CSS avanzado</option>
+          <option>JavaScript</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="actions">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+</body>
+</html>
